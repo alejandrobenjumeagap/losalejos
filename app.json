@@ -1,0 +1,17 @@
+{
+  "name": "losalejos.site",
+  "description": "losalejos.site",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
