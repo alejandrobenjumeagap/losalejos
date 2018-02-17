@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  scope :invites do
+    get '/token/:token'                                     => 'invites#get_details'
+    patch '/token/:token/user/:user_id'                     => 'invites#update_user'
+  end
+
 end
